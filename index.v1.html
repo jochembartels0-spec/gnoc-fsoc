@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Job Is A Business Decision</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      min-height: 100vh;
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Inter', sans-serif;
+      padding: 20px;
+    }
+    .card {
+      background: rgba(255,255,255,0.07);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 24px;
+      padding: 40px 32px;
+      max-width: 620px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 25px 60px rgba(0,0,0,0.5);
+      animation: fadeUp 0.8s ease forwards;
+    }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .emoji-top { font-size: 3rem; margin-bottom: 16px; animation: bounce 1.5s infinite; }
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+    .meme-img {
+      width: 100%;
+      border-radius: 16px;
+      border: 3px solid #FFD600;
+      box-shadow: 0 8px 32px rgba(255,214,0,0.25);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+    .meme-img:hover {
+      transform: scale(1.03) rotate(-1deg);
+      box-shadow: 0 16px 48px rgba(255,214,0,0.45);
+    }
+    .quote {
+      margin-top: 28px;
+      font-size: 1.3rem;
+      font-weight: 900;
+      color: #FFD600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      line-height: 1.4;
+      text-shadow: 0 2px 12px rgba(255,214,0,0.3);
+    }
+    .sub {
+      margin-top: 12px;
+      font-size: 0.95rem;
+      color: rgba(255,255,255,0.6);
+      font-weight: 400;
+    }
+    .banana { font-size: 1.5rem; margin: 0 6px; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="emoji-top">🍌</div>
+    <img src="meme.png" alt="Minion Meme" class="meme-img">
+    <p class="quote">
+      <span class="banana">🍌</span>
+      A job is a business decision,<br>not a reflection of your value.
+      <span class="banana">🍌</span>
+    </p>
+    <p class="sub">Hang in there. The best is yet to come. 💪</p>
+  </div>
+</body>
+</html>
